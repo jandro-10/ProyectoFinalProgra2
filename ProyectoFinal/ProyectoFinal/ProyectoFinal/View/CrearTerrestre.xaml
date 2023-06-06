@@ -6,7 +6,7 @@
 
 
     <ContentPage.BindingContext>
-        <local:viewModelAereo></local:viewModelAereo>
+        <local:viewModelTerrestre></local:viewModelTerrestre>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
