@@ -1,12 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProyectoFinal.View.CrearAereo">
+             x:Class="ProyectoFinal.View.CrearAereo"
+             
+    
+
+    <ContentPage.BindingContext>
+        <local:viewModelAereo></local:viewModelAereo>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label Text="Tipo Aeronove"></Label>
+            <Entry Text="Nombre" Keyboard="Default"></Entry>
+            <Label Text="Modelo Aeronave"></Label>
+            <Entry Text="Modelo" Keyboard="Numeric"></Entry>
+            <Label Text="año de la Aeronave"></Label>
+            <Entry Text="Anio" Keyboard="Numeric"></Entry>
+            <Label Text="Color Aeronave"></Label>
+            <Entry Text="Color" Keyboard="Default"></Entry>
+            <Label Text="Cantidad de Helices"></Label>
+            <Entry Text="CantidadHelices" Keyboard="Numeric"></Entry>
+            <Label Text="Cantidad Alas"></Label>
+            <Entry Text="CantidadAlas" Keyboard="Numeric"></Entry>
+            <Button Command="CrearAeronave " Text="Crear Aeronave"></Button>
+
+            <ListView ="listaH" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="nombre"/>                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

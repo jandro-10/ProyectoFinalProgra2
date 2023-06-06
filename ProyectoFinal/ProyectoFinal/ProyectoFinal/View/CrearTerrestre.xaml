@@ -2,11 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.View.Page1">
+
+
+
+    <ContentPage.BindingContext>
+        <local:viewModelAereo></local:viewModelAereo>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nombre Vehiculo"></Label>
+            <Entry Text="Nombre" Keyboard="Default"></Entry>
+            <Label Text="Modelo"></Label>
+            <Entry Text="Modelo" Keyboard="Numeric"></Entry>
+            <Label Text="anio"></Label>
+            <Entry Text="Anio" Keyboard="Numeric"></Entry>
+            <Label Text="Color "></Label>
+            <Entry Text="Color" Keyboard="Default"></Entry>
+            <Label Text="Cantidad de Ruedas"></Label>
+            <Entry Text="CantidadRuedas" Keyboard="Numeric"></Entry>
+            <Label Text="Placa"></Label>
+            <Entry Text="Placa" Keyboard="Numeric"></Entry>
+            <Button Command="CrearVehiculo " Text="Crear Vehiculo"></Button>
+
+            <ListView ="listaH" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="nombre Vehiculo"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage> >

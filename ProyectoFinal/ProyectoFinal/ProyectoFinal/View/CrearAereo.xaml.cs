@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ProyectoFinal.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CrearAereo : ContentPage
+    public partial class viewCrearAereo : ContentPage
     {
-        public CrearAereo()
+        public viewCrearAereo()
         {
             InitializeComponent();
         }
